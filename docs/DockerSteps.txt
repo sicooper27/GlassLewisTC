@@ -1,0 +1,9 @@
+1. Ensure Docker is installed - Docker Desktop was used for testing
+2. Clone the repo https://github.com/sicooper27/GlassLewisTC locally which contains the webapp and the Dockerfile used to create the Docker image and container
+3. Run Windows Terminal and cd to the repo directory
+4. In Windows Terminal run: docker build . -t gltc 
+5. Wait for the image with the gltc tag to be built in Docker Desktop
+6. In Windows Terminal run:  docker run -p 8080:80 gltc
+7. Wait for the container to be created and started
+8. Browse to http://localhost:8080 to confirm the webapp is running on the container
+9. Once verified stop & delete the container and remove the image
